@@ -65,9 +65,9 @@
   font-weight: normal;
 }
 
-@media only screen /* and (min-width: 1367px) */ {
+@media only screen {
 	body #magicMouseCursor {
-	  z-index:10000000!important;
+	  z-index:0;
 	  position: fixed;
 	  width: 35px;
 	  height: 35px;
@@ -83,12 +83,12 @@
 
 	body #magicPointer {
 	  z-index:10000000!important;
-	  height: 5px;
-	  width: 5px;
+	  height: 8px;
+	  width: 8px;
 	  top: 0;
 	  left: 0;
 	  position: fixed;
-	  background: red;
+	  background: var(--vt-c-black);
 	  border-radius: 50%;
 	  pointer-events: none;
 	  transition: background-color 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s; }
@@ -112,14 +112,17 @@
 		cursor: none!important; }
 }
 
-
-
 body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=);;
-  background-size: 300%;
+  
+  background-image: radial-gradient(#000000 5%, transparent 8%),
+    radial-gradient(#000000 5%, transparent 8%);
+  background-size: 60px 60px; /* Comment: Sets the size of the background dots */
+  background-position: 0 0, 30px 30px; /* Comment: Sets the position of the background dots */
+  background-repeat: repeat;
+
   transition:
     color 0.5s,
     background-color 0.5s;
