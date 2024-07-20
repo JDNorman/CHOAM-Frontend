@@ -71,7 +71,7 @@
 	  position: fixed;
 	  width: 35px;
 	  height: 35px;
-	  background: #af7516ad;
+	  background: #95610f60;
 	  border-radius: 50%;
 	  z-index: 9999;
 	  left: 0;
@@ -117,9 +117,9 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   
-  background-image: radial-gradient(#000000 5%, transparent 8%),
-    radial-gradient(#000000 5%, transparent 8%);
-  background-size: 60px 60px; /* Comment: Sets the size of the background dots */
+  background-image: radial-gradient(#211f1fbd 5%, transparent 8%),
+    radial-gradient(#211f1fbd 5%, transparent 8%);
+  background-size: 30px 30px; /* Comment: Sets the size of the background dots */
   background-position: 0 0, 30px 30px; /* Comment: Sets the position of the background dots */
   background-repeat: repeat;
 
@@ -156,9 +156,6 @@ body {
   }
   .disabled {
     text-decoration: none;
-  }
-  .disabled:hover {
-    cursor: default;
   }
 }
 
