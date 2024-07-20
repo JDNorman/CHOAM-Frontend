@@ -10,7 +10,7 @@ import LoginMenu from './components/LoginMenu.vue';
     <img alt="CHOAM logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld welcomemsg="welcome to" submsg="The first Spice as a Service!"/>
+      <HelloWorld welcomemsg="welcome to" submsg='"The First Spice as a Service!"'/>
     </div>
   </header>
 
