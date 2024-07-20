@@ -12,6 +12,7 @@ a, .yellow {
   color: #e6930e;
   transition: 1s;
   padding: 3px;
+  cursor: none!important;
 }
 
 @media (hover: hover) {

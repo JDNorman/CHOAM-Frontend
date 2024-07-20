@@ -42,3 +42,12 @@ fetch('https://discord.com/api/user/@me', {
   // handle response
 })
 .catch(console.error);
+
+// Mouse Gradient Effect
+document.addEventListener('mousemove', function(e) {
+  const background = document.getElementById('app');
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  background.style.background = `radial-gradient(circle at ${mouseX}px ${mouseY}px, rgba(128,0,128,0) 0%, rgba(128,0,128,0) 60%)`;
+})
