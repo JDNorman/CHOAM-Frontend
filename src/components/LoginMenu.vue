@@ -1,22 +1,11 @@
-<template>
-  <a href="https://discord.com/oauth2/authorize?client_id=1227073029759041597&response_type=token&redirect_uri=http%3A%2F%2Flocalhost%3A57159%2Fauth%2Fdiscord&scope=identify"
-    class="fixed top-14 left-24 hover:w-14 overflow-hidden aspect-square w-12 transition-all flex rounded-full bg-spice-purple">
-    <i class="fa-brands fa-discord text-2x1"></i>
-  </a>
+<script>
+import DiscordIcon from './icons/IconDiscord.vue';
+</script>
 
-    
-<!--     
-    <div class="item">
-      <i>
-        <slot name="icon"></slot>
-      </i>
-      <div class="details">
-        <h3>
-          <slot name="heading"></slot>
-        </h3>
-        <slot></slot>
-      </div>
-    </div> -->
+<template>
+  <div class="top-0">
+    <nav class="w-5 bg-yellow aspect-1"></nav>
+  </div>
 </template>
   
   <style scoped>

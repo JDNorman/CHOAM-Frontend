@@ -25,7 +25,7 @@ window.onload = () => {
   if (!accessToken) {
     window.location.href('/');
     // if no access token accepted...
-
+    
   }
 
 

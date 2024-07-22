@@ -2,22 +2,33 @@
 defineProps({
   welcomemsg: {
     type: String,
-    required: true
+    required: false,
+  },
+  headmsg: {
+    type: String,
+    required: false,
   },
   submsg: {
     type: String,
-    required: true
+    required: false,
   },
+  showImg: {
+    type: Boolean,
+    required: true,
+  }
 })
 </script>
 
 <template>
-  <div class="greetings">
-    <h3>{{ welcomemsg }}</h3>
-    <h1 class="yellow">
-      CHOAM
-    </h1>
-    <h3 class="submsg text-purple disabled relative">{{ submsg }}</h3>
+  <div class="greetings flex">
+    <img alt="CHOAM logo" class="logo w-36 h-36" src="../assets/logo.svg" v-if="showImg" />
+    <div class="text">
+      <div class="m-4">
+        <h3>{{ welcomemsg }}</h3>
+        <h1 class="yellow">{{ headmsg }}</h1>
+      </div>
+    </div>
+    <h3 class="submsg text-purple disabled relative self-center">{{ submsg }}</h3>
   </div>
 </template>
 
