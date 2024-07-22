@@ -1,7 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue';
 import TheWelcome from './components/TheWelcome.vue';
-import ErebusHosted from './components/ErebusHosted.vue';
 import LoginMenu from './components/LoginMenu.vue';
 </script>
 

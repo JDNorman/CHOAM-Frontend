@@ -168,6 +168,13 @@ body {
   .disabled {
     text-decoration: none;
   }
+  .yellow-hover {
+    color: var(--color-heading);
+    transition: all 150ms ease;
+  }
+  .yellow-hover:hover {
+    color: var(--vt-c-yellow);
+  }
 }
 
 /** ANIMS */

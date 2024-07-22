@@ -1,88 +1,97 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
+import AboutIcon from './icons/IconAbout.vue'
+import CreditsIcon from './icons/IconCredits.vue'
+import ServicesIcon from './icons/IconServices.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import DiscordIcon from './icons/IconDiscord.vue'
 </script>
 
 <template>
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <AboutIcon />
     </template>
-    <template #heading>About</template>
+    <template #heading><span class="yellow-hover">About</span></template>
 
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    This website is the web terminal for interacting CHOAM's services, 
+    including a map service, a market hub service, and server organization.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <ToolingIcon />
+      <CreditsIcon />
     </template>
-    <template #heading>Tooling</template>
+    <template #heading><span class="yellow-hover">Credits</span></template>
 
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank" rel="noopener"
-      >Cypress Component Testing</a
-    >.
+    Credit for this project goes to: 
+    
+    <br /> 
+    
+    <img src="https://cdn.discordapp.com/guilds/1215140184446738472/users/1013147665325883463/avatars/3400db2888da4fbf325727f899326ee9.png" 
+    class="inline w-4 rounded-full"/> 
+    <span class="text-purple"> Malamania</span>, 
+    
+    <img src="https://cdn.discordapp.com/avatars/720847074131968000/6e6f1dbb4ece883479b6754e6eda4823.png"
+    class="inline w-4 rounded-full"> 
+    <span class="text-purple"> TehNizZ (NZMPLAYS)</span>, 
+    
+    <img src="https://cdn.discordapp.com/avatars/187931402908598272/8be7a43bd3be59562733f9ab4778d9af.png"
+    class="inline w-4 rounded-full">
+    <span class="text-purple"> Halex</span>, 
 
+    <img src="https://cdn.discordapp.com/avatars/209728362703355916/a_1438fe08c768ff2513a4bb6e61521e8b.gif"
+    class="inline w-4 rounded-full">
+    <span class="text-purple"> shib</span>, and 
+
+    <img src="https://cdn.discordapp.com/avatars/164647838704205825/6ade09e8a47378b353ce57e22da1ca70.png"
+    class="inline w-4 rounded-full">
+    <span class="text-purple"> Jot</span>!    
+  
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <DiscordIcon />
+    </template>
+    <template #heading><span class="yellow-hover">Bug Reports</span></template>
+    
+    Catch a bug? Please join 
+    <a href="https://discord.gg/ND2MBzTetu">this server</a> 
+    to report anything you may have caught! 
+    
     <br />
+    <br />
+    
+    If there are any requests you would like to make for new ideas or ways we could improve, 
+    feel free to join the discord server to ask!
 
-    More instructions are available in <code>README.md</code>.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <EcosystemIcon />
+      <ServicesIcon />
     </template>
-    <template #heading>Ecosystem</template>
+    <template #heading>Services</template>
 
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
-  </WelcomeItem>
+    We provide many services, including a world map, a market tracker, a taxi service, and much more!
+    We are always looking for ways to improve, and we are constantly coming up with more ideas for our systems.
+    Feel free to reach out anytime to talk to us if anything is wrong or if any of our services could be made better!
 
-  <WelcomeItem>
-    <template #icon>
-      <CommunityIcon />
-    </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template #heading>Support Us</template>
 
-    As an independent project, Vue relies on community backing for its sustainability. You can help
+    As an independent project, we relies on community backing for its sustainability. You can help
     us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
+    <a href="https://ko-fi.com/animateobject_" target="_blank" rel="noopener">buying us a coffee</a>!
+
+    Purchases will increase the benefits you get from joining our discord server, we provide more access into our testing channels
+    as well as more unique benefits!
   </WelcomeItem>
 </template>
